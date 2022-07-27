@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary:#E2AD7B;
+$body-bg:#f7f6f2;
+$state-success-text:#796D01;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#455464;
+$text-color:#F7F6F2;
+$sp-logo-margin-y:6px;
+$navbar-inverse-link-hover-color:#ffffff;
+$panel-bg:#EFEDE7;
+$brand-success:#625D1D;
+$navbar-inverse-bg:#F74C25;
+$brand-warning:#f0ad4e;
+$brand-danger:#d9534f;
+$sp-tagline-color:#717171;
+$navbar-inverse-link-color:#bdc0c4;
+$brand-info:#F74C25;
+$link-color:#51472D;
+$sp-logo-margin-x:8px;
+$btn-default-bg:#F7F6F2;
+$text-muted:#BF8A62;
+</css_variables>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="kb_home">e1c919e4dbd3220099f93691f0b8f535</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</kb_knowledge_page>
+        <login_page/>
+        <logo>1a26d57f2f30151004702aa62799b6a1</logo>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page display_value="kb_search">79e23a7ddbd6220099f93691f0b8f53c</sc_catalog_page>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 20:37:03</sys_created_on>
+        <sys_id>9cf4d93f2f30151004702aa62799b6d2</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Re Grocery</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sp_portal_9cf4d93f2f30151004702aa62799b6d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 20:47:14</sys_updated_on>
+        <theme/>
+        <title>Re Grocery</title>
+        <ts_index_group/>
+        <url_suffix>op</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=9cf4d93f2f30151004702aa62799b6d2"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ff6633</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>logo</file_name>
+        <hash>1ab469666ed6a0ce07d5a3824473a1a985de08f624b60db700d941561a573da5</hash>
+        <image_height>159</image_height>
+        <image_width>318</image_width>
+        <size_bytes>1293</size_bytes>
+        <size_compressed>1306</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 20:34:59</sys_created_on>
+        <sys_id>1a26d57f2f30151004702aa62799b6a1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 20:34:59</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>9cf4d93f2f30151004702aa62799b6d2</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="1a26d57f2f30151004702aa62799b6a1">1a26d57f2f30151004702aa62799b6a1</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 20:34:59</sys_created_on>
+        <sys_id>5a26d57f2f30151004702aa62799b6a1</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>hZP5P9MNAMfpITVphWzlWDxIMqIXuVJprDG3HDlGjh632LKtEeuprMhSOXIlymNeD42nF3KsJzZnDdHlSOTYwTA7vrQ8nr+gzw+fz/vz2+eXD8XTHakCOgSSk5NTQZ1HeMvJyTtsc8Wu37bdf9hJth0FnmhfJynaUCJeA1z1hWdVJWhDKSBeOa2yOf1hua8NQOlubooBzjS/rY53/jDgrCURC+dvJfPQBoLLqHV65cpZtWVakfT7F+lYv0ywCDiqS86AZZLVza0fy54mK2WUH4BwMfSMsJjM8bUQsFq5qYEC4qW1lr/4RTf4cR586jXORVuuj9nKraRl50O8ZD9uRjSX0cR5crd9iro9XcEChTjriy9d+sLJp1lDd4btVnDLPG4M2uHSrGwKT5DIvk7odyve87pce9CjUCCsCaIbcf82U0bZasv9SlIPG3ZGZoXKqizo/Ep9qv1e8gayaOg65UVCyUvT/ZWdamT7b/SMNNxL83BGh9Ia7BL76wAzOQaT8Zr/M9bKZOBz+ONGzZOEKARCiAvWT3cMON6f4nLUrGoj//euceludioA9/iRlQuKT468uoxt642MDK3IDikMekmqG2+UGt0tzZvFD9YeGIn31WXs1OBDdtdURt3s820ncE/fZNW/sg8kEr6BaUY0h4hHJhiFXgGaf+KzCe91JAlmcSwwsiCHSjTuxFYMf6daPL3Ywksl6ApaewV/wm+fu46+EOa3tl+4Jpz2CkmPqYkYWG/silHX9fIP6UeKJ4M61a2Kq2VXygLWnoHc+KM11IHOvA6Dh3vfp9Ip5ybNozVzGG4cT0hwoxeOOR/SP9br+rToVoq1A7sKdWEBDTFiPO97XPfT1G7x3wLFcZGhnrb5rAb8PQvsw1iGNp18iLnxieZ8kFhjQyH1UQHq4UoNDIUF5pVGAZWSOFvmx/L8bJzpZlfm/bsRC8iI7o+Hfx7vRgbbvBtJHErahSWFW/RMzL2BwsbVU6weEOCUch+IKzYDwpIanhAZWPZ/Zb4t6dCJIIkd7zX+wyshLXmlQ55L17XyNmoTyOuHclbdHgyBOHrEqQiZOks6H3jKiWK7V2yzfKJ74UVZjln1JKgNkQet82AeOWKaPrii0zqMH9PT2Oo2Ws0+6mAl4ko7j7Cv1cPejErKNGrWH5+aCL/ToCbyJYVnMWuRg0naPZajqnXHwNDZ95iLAZrpve1hovsc7YFQrGVa+NiWFMuw64FiepY4KmgHF1TcPHokHQKEFM2qKenQWl17kYlVMlWN9FRstgqRPrX2fMmP1ozjPVC0C6qo10MjBqy3RIUNbovaTzCF08w7Fe7xkXPGKQnjuDReyxMmqO6Z5WSNmzOueFU+rgH8aW613fOPYT2emHjFO9kF2OPWnFVNL595O3IVuG/sYIXhtSQ23FYV6ZGjoLkULGYxMz/KWCGicA9qaNZPEx6Nz7XLNxiFxTMsiNwZYpWM2zSsmB/7cDgaj21/I9+nvPpOWFox1z+TYtqlK37Nxk/Gn/vMIzRN42NHOpaipry1gETzlsa4t/nFpyY36IX6ocE6tFlOsrlWWtJBdmh0cAFAP+af61OdeEDhUUl53odxTCtBKSBhBxhzmTJkn2n7EbYrBt4jHX11s9OddD1uY7hXkCF61iyQj13wJkkSg5QHQbB9rC4la/KK/0QD3FfH/gBo3y9fXT7jwYI7126mIDr+rygnd0S9Yxj5Pw+l7CkNBQAA</data>
+        <length>1728</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="1a26d57f2f30151004702aa62799b6a1">1a26d57f2f30151004702aa62799b6a1</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 20:34:59</sys_created_on>
+        <sys_id>da26d57f2f30151004702aa62799b6a1</sys_id>
+    </sys_attachment_doc>
+</record_update>

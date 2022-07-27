@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="b9c1c4bf2ff8d11004702aa62799b6ba" sys_domain="global" table="x_845657_operate_country" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-26 14:26:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71c1c4bf2ff8d11004702aa62799b6bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_845657_operate_country" name="x_845657_operate_country" sys_domain="global" view="Default view">b9c1c4bf2ff8d11004702aa62799b6ba</sys_ui_form>
+            <sys_ui_section caption="Country" display_value="Country" name="x_845657_operate_country" sys_domain="global" view="Default view">4c7180bf2ff8d11004702aa62799b670</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-26 14:26:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_845657_operate_country</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-26 14:26:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b9c1c4bf2ff8d11004702aa62799b6ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_845657_operate_country</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+            <sys_update_name>sys_ui_form_sections_b9c1c4bf2ff8d11004702aa62799b6ba</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-26 14:26:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

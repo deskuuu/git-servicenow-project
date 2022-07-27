@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Product" max_length="40" name="x_845657_operate_product" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Product image 1" max_length="40" name="product_image_1" type="user_image"/>
+        <element label="Product image 2" max_length="40" name="product_image_2" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category " max_length="40" name="u_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="hardware" sequence="0" value="u_hardware"/>
+                <element inactive_on_update="false" label="software" sequence="1" value="u_software"/>
+                <element inactive_on_update="false" label="service" sequence="2" value="u_service"/>
+                <element inactive_on_update="false" label="other" sequence="3" value="u_other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="60" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element label="Price" max_length="40" name="u_price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Specify" max_length="40" name="u_specify" type="string"/>
+    </element>
+</database>

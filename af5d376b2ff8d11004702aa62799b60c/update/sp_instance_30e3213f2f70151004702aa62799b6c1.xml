@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">f13bd9b32f70151004702aa62799b626</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 21:34:57</sys_created_on>
+        <sys_id>30e3213f2f70151004702aa62799b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sp_instance_30e3213f2f70151004702aa62799b6c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 21:34:57</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=30e3213f2f70151004702aa62799b6c1"/>
+</record_update>

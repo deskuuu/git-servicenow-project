@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_845657_operate.verifyEmail</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>verifyEmail</name>
+        <script><![CDATA[var verifyEmail = Class.create();
+verifyEmail.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    /*
+     * isEmail – check if the given string is a valid email address, format: abc@domain.com
+     *
+     * @param email – string
+     * @return – boolean (true=valid email)
+     *
+     */
+
+    isEmail: function(email) {
+        var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/ig;
+        return regex.test(email);
+    },
+
+    type: 'verifyEmail'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 15:33:22</sys_created_on>
+        <sys_id>0cf09cfb2f3cd11004702aa62799b6ec</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>verifyEmail</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sys_script_include_0cf09cfb2f3cd11004702aa62799b6ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 19:22:29</sys_updated_on>
+    </sys_script_include>
+</record_update>

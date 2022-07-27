@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Order " max_length="40" name="x_845657_operate_order" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Address " max_length="40" name="u_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer" max_length="40" name="u_customer" reference="x_845657_operate_customer" type="reference"/>
+        <element label="Final price" max_length="40" name="u_final_price" type="integer"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Related order lines" max_length="1024" name="u_related_order_ines" reference="x_845657_operate_order_line" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status " max_length="40" name="u_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="approved" value="3"/>
+                <element inactive_on_update="false" label="in-progress" value="1"/>
+                <element inactive_on_update="false" label="rejected" value="4"/>
+                <element inactive_on_update="false" label="requested" value="2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

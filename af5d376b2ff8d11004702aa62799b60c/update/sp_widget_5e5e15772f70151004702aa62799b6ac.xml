@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function TimeCtrl($scope, $timeout) {
+    $scope.clock = "loading clock..."; // initialise the time variable
+    $scope.tickInterval = 1000 //ms
+    var tick = function() {
+        $scope.clock = Date.now() // get the current time
+        $timeout(tick, $scope.tickInterval); // reset the timer
+    }
+    // Start the timer
+    $timeout(tick, $scope.tickInterval);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.clock{
+    // background-image: url("https://cdn.sanity.io/images/ztm1moqx/production/f47500182b1edcb85376eecbdc0178a8d391bbbb-948x1208.jpg?w=1920&amp;q=75&amp;fit=clip&amp;auto=format");
+     width:210px;
+     height:210px;
+  background-color: #F74C25;
+}
+
+p{
+   text-align: center; 
+   font-weight: bold;
+   font-weight: 900; 
+   font-size: large;
+   color: white;
+}
+  
+ #date{
+  padding: 60px;
+}
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": 
+	{
+		"zone": "America/Los_Angeles",
+		"title": "San Diego, CA",
+		"c_color": "blue"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>true</has_preview>
+        <id>clock-re</id>
+        <internal>false</internal>
+        <link><![CDATA[function (scope, $element, attrs) {
+	var element = $element[0];
+	cacheElementSize(scope, element);
+	$(window).on('resize', onWindowResize);
+	// run after layout
+	setTimeout(onWindowResize, 5);
+	
+	function cacheElementSize(scope, element) {
+		var elem = scope.elem = {}
+		elem.w = element.offsetWidth;
+		elem.h = element.offsetHeight;
+		return elem;
+	}
+
+	function onWindowResize() {
+		var elem = scope.elem;
+		var isSizeChanged = elem.w != element.offsetWidth || elem.h != element.offsetHeight;
+		if (isSizeChanged) {
+			elem = cacheElementSize(scope, element);
+			// to stay square, the child width has to be
+			// min of height, width
+			var w = Math.min(elem.h, elem.w);
+			var clock = element.firstChild;
+			clock.style.width = w + "px";
+		}
+	}	
+}]]></link>
+        <name>clock-re</name>
+        <option_schema>[{"name":"zone","default_value":"America/Los_Angeles","section":"Data","label":"TimeZone","type":"string"},{"name":"c_color","default_value":"red","section":"Presentation","label":"Second hand color","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 21:10:45</sys_created_on>
+        <sys_id>5e5e15772f70151004702aa62799b6ac</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>clock-re</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sp_widget_5e5e15772f70151004702aa62799b6ac</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 21:36:26</sys_updated_on>
+        <template><![CDATA[<div class='clock'>
+
+<div ng-controller='TimeCtrl' id='clo'>
+    <p id='date'>{{ clock  | date:'medium'}}</p>
+</div>
+    
+</div>]]></template>
+    </sp_widget>
+</record_update>

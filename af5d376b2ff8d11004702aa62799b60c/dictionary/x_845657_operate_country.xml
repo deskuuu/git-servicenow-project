@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Country" max_length="40" name="x_845657_operate_country" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Alpha-3" max_length="40" name="alpha_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Alpha-2" max_length="40" name="u_alpha_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country code" max_length="40" name="u_country_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country name" max_length="40" name="u_country_name" type="string"/>
+    </element>
+</database>

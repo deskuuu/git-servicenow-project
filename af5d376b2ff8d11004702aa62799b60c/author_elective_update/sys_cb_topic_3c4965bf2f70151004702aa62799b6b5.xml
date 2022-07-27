@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Order a product for a certain customer.</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{"graph_api_version":"1.0.39","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"2896096114634726aaa0c4564845017c":{"id":"2896096114634726aaa0c4564845017c","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"b63e181e6c804fb6aea7d74719c23193":{"id":"b63e181e6c804fb6aea7d74719c23193","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"de1ee5e46b864580adfbbd1f4d52aaed","edgeType":"Edge","source":"2896096114634726aaa0c4564845017c","target":"b63e181e6c804fb6aea7d74719c23193","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases>Order a product,product,order</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Order a product</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 21:58:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3c4965bf2f70151004702aa62799b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order a product</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sys_cb_topic_3c4965bf2f70151004702aa62799b6b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 21:58:26</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=3c4965bf2f70151004702aa62799b6b5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Operate">af5d376b2ff8d11004702aa62799b60c</application>
+        <file_path/>
+        <instance_id>2a84bf9edb22cc1049eac5970596198f</instance_id>
+        <instance_name>dev97857</instance_name>
+        <name>sys_cb_topic_3c4965bf2f70151004702aa62799b6b5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><description>Order a product for a certain customer.</description><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><graph>{"graph_api_version":"1.0.39","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"2896096114634726aaa0c4564845017c":{"id":"2896096114634726aaa0c4564845017c","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"b63e181e6c804fb6aea7d74719c23193":{"id":"b63e181e6c804fb6aea7d74719c23193","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"de1ee5e46b864580adfbbd1f4d52aaed","edgeType":"Edge","source":"2896096114634726aaa0c4564845017c","target":"b63e181e6c804fb6aea7d74719c23193","sourcePort":"","targetPort":""}]}}}</graph><key_phrases>Order a product,product,order</key_phrases><library>false</library><live_agent>false</live_agent><name>Order a product</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><secure_custom_input_control>false</secure_custom_input_control><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-26 21:58:26</sys_created_on><sys_domain>global</sys_domain><sys_id>3c4965bf2f70151004702aa62799b6b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order a product</sys_name><sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package><sys_policy/><sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope><sys_update_name>sys_cb_topic_3c4965bf2f70151004702aa62799b6b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-26 21:58:26</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=3c4965bf2f70151004702aa62799b6b5"/></record_update>]]></payload>
+        <payload_hash>-1342612681</payload_hash>
+        <record_name>Order a product</record_name>
+        <reverted_from/>
+        <source>6f5d376b2ff8d11004702aa62799b60e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 21:58:27</sys_created_on>
+        <sys_id>014925732fb0151004702aa62799b6f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1823c84b9ef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 21:58:27</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>49492573c2b01510b88cf61244c01ff0</update_guid>
+        <update_guid_history>49492573c2b01510b88cf61244c01ff0:-1342612681</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-26 22:02:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>0969adcacdad4703986db3764a276fc9</sys_id>
+        <sys_metadata>3c4965bf2f70151004702aa62799b6b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order a product</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_scope_delete display_value="">07674d5bb29c492fb810692ec1c73699</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_3c4965bf2f70151004702aa62799b6b5</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_3c4965bf2f70151004702aa62799b6b5">014925732fb0151004702aa62799b6f1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-26 22:02:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
