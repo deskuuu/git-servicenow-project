@@ -5,8 +5,8 @@ $body-bg:#f7f6f2;
 $state-success-text:#796D01;
 $sp-homepage-bg:#fff;
 $sp-navbar-divider-color:#455464;
-$text-color:#F7F6F2;
-$sp-logo-margin-y:6px;
+$text-color:#d9534f;
+$sp-logo-margin-y:.6rem;
 $navbar-inverse-link-hover-color:#ffffff;
 $panel-bg:#EFEDE7;
 $brand-success:#625D1D;
@@ -17,7 +17,7 @@ $sp-tagline-color:#717171;
 $navbar-inverse-link-color:#bdc0c4;
 $brand-info:#F74C25;
 $link-color:#51472D;
-$sp-logo-margin-x:8px;
+$sp-logo-margin-x:.8rem;
 $btn-default-bg:#F7F6F2;
 $text-muted:#BF8A62;
 </css_variables>
@@ -44,14 +44,14 @@ $text-muted:#BF8A62;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-26 20:37:03</sys_created_on>
         <sys_id>9cf4d93f2f30151004702aa62799b6d2</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Re Grocery</sys_name>
         <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
         <sys_update_name>sp_portal_9cf4d93f2f30151004702aa62799b6d2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-26 20:47:14</sys_updated_on>
+        <sys_updated_on>2022-07-27 09:07:00</sys_updated_on>
         <theme/>
         <title>Re Grocery</title>
         <ts_index_group/>

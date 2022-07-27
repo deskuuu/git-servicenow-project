@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Address" max_length="40" name="x_845657_operate_address" type="collection">
+    <element label="Address" max_length="40" name="x_845657_operate_address" sizeclass="0" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Latitude " max_length="40" name="latitude" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Alpha-2 country" max_length="40" name="u_alpha_2_country" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="u_city" type="string"/>
         <element attributes="encode_utf8=false" label="Country" max_length="32" name="u_country" reference="x_845657_operate_country" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Longitude " max_length="40" name="u_longitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Longtitude " max_length="40" name="u_longitude" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Postal code" max_length="40" name="u_postal_code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Street" max_length="40" name="u_street" type="string"/>
         <element label="Street number" max_length="40" name="u_street_number" type="integer"/>

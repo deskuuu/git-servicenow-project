@@ -16,20 +16,20 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-26 21:37:29</sys_created_on>
         <sys_id>c274a1fb2f70151004702aa62799b6a6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
         <sys_update_name>sp_instance_c274a1fb2f70151004702aa62799b6a6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-26 21:38:20</sys_updated_on>
+        <sys_updated_on>2022-07-27 09:09:50</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters><![CDATA[{
 	"html": {
-		"value": "<p><img style=\"max-width: 100%; max-height: 480px;\" src=\"/sys_attachment.do?sys_id=4794e13f2f70151004702aa62799b632\" data-mce-src=\"/sys_attachment.do?sys_id=4794e13f2f70151004702aa62799b632\" data-mce-style=\"max-width: 100%; max-height: 480px;\"></p>",
-		"displayValue": ""
+		"value": "<p>.</p>",
+		"displayValue": "<p>.</p>"
 	}
 }]]></widget_parameters>
     </sp_instance>

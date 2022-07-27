@@ -31,7 +31,7 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "I can help you to find and update a NeedIt record. :)"
+                    "text": "I can help you to order a Product . :)"
                   }
                 ]
               }
@@ -117,7 +117,7 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "You selected: "
+                    "text": "You have selected: "
                   },
                   {
                     "type": "datapill",
@@ -142,117 +142,6 @@
           "applicability": {
             "value": "",
             "mode": "query"
-          }
-        },
-        "67491c18611e4bc8b5dda2c8840cd0bd": {
-          "stepType": "ReferenceChoicePrompt",
-          "name": "Product List",
-          "prompt": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "Select a Product "
-                  },
-                  {
-                    "type": "datapill",
-                    "dataPill": {
-                      "value": "{{vaInputs.product_type}}",
-                      "displayValue": "Input Variables➛Product Type"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "text": "Record to View:"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "confirmMessage": {
-            "value": "",
-            "mode": "simple"
-          },
-          "acknowledgeMsg": {
-            "value": "",
-            "mode": "simple"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "skippable": {
-            "value": "",
-            "mode": "query"
-          },
-          "defaultValue": {
-            "value": "",
-            "mode": "simple"
-          },
-          "variableId": "2eed8944f15b405db6375428e6128d65",
-          "id": "67491c18611e4bc8b5dda2c8840cd0bd",
-          "mode": "glide_record",
-          "script": "",
-          "metadataScript": "",
-          "cardData": {},
-          "noRecordsResponseMsg": {
-            "value": [
-              {
-                "type": "paragraph",
-                "children": [
-                  {
-                    "text": "No records!"
-                  }
-                ]
-              }
-            ],
-            "mode": "simple"
-          },
-          "condition": {
-            "mode": "glide_query",
-            "value": "active=true^u_request_type={{vaInputs.product_type}}^u_requested_for={{vaInputs.user}}"
-          },
-          "hasCardHeader": false,
-          "cardMetadata": {
-            "mode": "card",
-            "metadataScript": "",
-            "cardTemplate": "",
-            "cardFields": {},
-            "cardDefinition": {}
-          },
-          "withNluUserInput": false,
-          "skipIfFulfilled": false
-        },
-        "7f19c5a7d2c74c9bb266dec15d7c02df": {
-          "id": "7f19c5a7d2c74c9bb266dec15d7c02df",
-          "stepType": "RecordOutput",
-          "name": "Operate Card",
-          "variableId": "2eed8944f15b405db6375428e6128d65",
-          "cardTemplate": "General",
-          "cardFields": {},
-          "mode": "variable",
-          "tableName": "x_845657_operate_product",
-          "fields": [
-            "u_category",
-            "u_name"
-          ],
-          "cardDefinition": {
-            "name": "Record",
-            "value": "General"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "condition": {
-            "mode": "glide_query",
-            "value": ""
           }
         },
         "7562333faf904c968d804c7f3d28bd85": {
@@ -301,23 +190,44 @@
           "stepType": "Decision",
           "name": "Order More Product Records"
         },
-        "39e62dcd5c244bf4a717115e5768fc3f": {
-          "id": "39e62dcd5c244bf4a717115e5768fc3f",
+        "a5642321e2ee4543a31df648082a817c": {
+          "id": "a5642321e2ee4543a31df648082a817c",
+          "stepType": "CrudAction",
+          "name": "Create Order Product",
+          "template": "u_name={{vaInputs.name_your_product_}}^u_category={{vaInputs.product_type}}",
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "11e29bf62e154f049c124b836779058e"
+        },
+        "8d42eb0c9e954cb9802fe768496aff77": {
+          "id": "8d42eb0c9e954cb9802fe768496aff77",
           "stepType": "Prompt",
-          "name": "What type?",
+          "name": "Name your product.",
           "prompt": {
             "value": [
               {
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Which one: software, hardwa"
+                    "text": "Name your product:"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
                   },
                   {
                     "type": "datapill",
                     "dataPill": {
-                      "value": "{{vaInputs.product_type}}",
-                      "displayValue": "Input Variables➛Product Type"
+                      "value": "{{vaInputs.name_your_product_}}",
+                      "displayValue": "Input Variables➛Name Your Product."
                     },
                     "children": [
                       {
@@ -326,7 +236,7 @@
                     ]
                   },
                   {
-                    "text": "re, service..."
+                    "text": ""
                   }
                 ]
               }
@@ -334,11 +244,52 @@
             "mode": "simple"
           },
           "confirmMessage": {
-            "value": "",
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "You have ordered:"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.name_your_product_}}",
+                      "displayValue": "Input Variables➛Name Your Product."
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
             "mode": "simple"
           },
           "acknowledgeMsg": {
-            "value": "",
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
             "mode": "simple"
           },
           "applicability": {
@@ -355,43 +306,14 @@
           },
           "withNluUserInput": false,
           "skipIfFulfilled": false,
-          "variableId": "3f45fd575a85445e9df6efb07ab70aec"
-        },
-        "16d706014d0647269d95a3b090d8fea3": {
-          "id": "16d706014d0647269d95a3b090d8fea3",
-          "stepType": "RecordOutput",
-          "name": "Updated Product",
-          "variableId": "2eed8944f15b405db6375428e6128d65",
-          "cardTemplate": "General",
-          "cardFields": {},
-          "mode": "variable",
-          "tableName": "x_845657_operate_product",
-          "fields": [
-            "u_when_needed"
-          ],
-          "cardDefinition": {
-            "name": "Record",
-            "value": "General"
-          },
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          },
-          "condition": {
-            "mode": "glide_query",
-            "value": ""
+          "variableId": "1128f05a7fe94c80957ea584a24c590a",
+          "inputType": {
+            "format": "Text",
+            "script": ""
           }
         }
       },
       "edges": [
-        {
-          "id": "cfc601a231e4498d94f48d6073d37602",
-          "edgeType": "Edge",
-          "source": "39e62dcd5c244bf4a717115e5768fc3f",
-          "target": "16d706014d0647269d95a3b090d8fea3",
-          "sourcePort": "",
-          "targetPort": ""
-        },
         {
           "id": "16ac9fdda15c4b68954351849654275d",
           "edgeType": "Edge",
@@ -405,22 +327,6 @@
           "edgeType": "Edge",
           "source": "78c429ec9915446d97b27f4d51aaf72f",
           "target": "6ace3949b7b847df9426814b0b7dca00",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "b06540bf58c3410d8a236ba18d57e206",
-          "edgeType": "Edge",
-          "source": "6ace3949b7b847df9426814b0b7dca00",
-          "target": "67491c18611e4bc8b5dda2c8840cd0bd",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "f5cc6344e58345158358933d62deab6b",
-          "edgeType": "Edge",
-          "source": "67491c18611e4bc8b5dda2c8840cd0bd",
-          "target": "7f19c5a7d2c74c9bb266dec15d7c02df",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -459,18 +365,26 @@
           "label": "Yes"
         },
         {
-          "id": "6e41a3063ba64070956112489a1cae9d",
+          "id": "cbbeb4fc8dfe4e6eb089ba4ff9eb1be1",
           "edgeType": "Edge",
-          "source": "7f19c5a7d2c74c9bb266dec15d7c02df",
-          "target": "39e62dcd5c244bf4a717115e5768fc3f",
+          "source": "a5642321e2ee4543a31df648082a817c",
+          "target": "7562333faf904c968d804c7f3d28bd85",
           "sourcePort": "",
           "targetPort": ""
         },
         {
-          "id": "478c6972d0c64e6bb3a5ceace929e3c6",
+          "id": "b06540bf58c3410d8a236ba18d57e206",
           "edgeType": "Edge",
-          "source": "16d706014d0647269d95a3b090d8fea3",
-          "target": "7562333faf904c968d804c7f3d28bd85",
+          "source": "6ace3949b7b847df9426814b0b7dca00",
+          "target": "8d42eb0c9e954cb9802fe768496aff77",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c2cdb864a739446ab50fa56b88fadd58",
+          "edgeType": "Edge",
+          "source": "8d42eb0c9e954cb9802fe768496aff77",
+          "target": "a5642321e2ee4543a31df648082a817c",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -503,28 +417,20 @@
       "varType": "choice",
       "choices": [
         {
-          "label": "Legal",
-          "value": "legal"
+          "label": "software",
+          "value": "software"
         },
         {
-          "label": "Facilities",
-          "value": "facilities",
+          "label": "hardware",
+          "value": "hardware",
           "checked": true
         },
         {
-          "label": "Human Resources",
-          "value": "human resources",
+          "label": "service",
+          "value": "service",
           "checked": true
         }
       ],
-      "category": "vaInputs"
-    },
-    "2eed8944f15b405db6375428e6128d65": {
-      "id": "2eed8944f15b405db6375428e6128d65",
-      "name": "product_list",
-      "label": "Product List",
-      "varType": "reference",
-      "table": "x_845657_operate_product",
       "category": "vaInputs"
     },
     "6ed1c3bb27ab4b2c90f0f120a8b93d29": {
@@ -535,14 +441,27 @@
       "secure": false,
       "category": "vaInputs"
     },
-    "3f45fd575a85445e9df6efb07ab70aec": {
-      "id": "3f45fd575a85445e9df6efb07ab70aec",
-      "name": "what_type_",
-      "label": "What Type?",
-      "varType": "date_time",
+    "11e29bf62e154f049c124b836779058e": {
+      "id": "11e29bf62e154f049c124b836779058e",
+      "name": "create_order_product",
+      "label": "Create Order Product",
+      "varType": "reference",
+      "table": "x_845657_operate_product",
+      "inactive": false,
+      "category": "vaInputs"
+    },
+    "1128f05a7fe94c80957ea584a24c590a": {
+      "id": "1128f05a7fe94c80957ea584a24c590a",
+      "name": "name_your_product_",
+      "label": "Name Your Product.",
+      "varType": "string",
       "secure": false,
       "category": "vaInputs",
-      "mode": "date"
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTY1ODkwOTQ3NTU2NSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
     }
   }
 }</graph>
@@ -564,14 +483,14 @@
         <sys_created_on>2022-07-26 21:59:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>378929332fb0151004702aa62799b679</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Order</sys_name>
         <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
         <sys_update_name>sys_cb_topic_378929332fb0151004702aa62799b679</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-26 22:17:23</sys_updated_on>
+        <sys_updated_on>2022-07-27 10:07:42</sys_updated_on>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
         <variables/>

@@ -10,8 +10,101 @@
         <script><![CDATA[var totalSumOfOrderLines = Class.create();
 totalSumOfOrderLines.prototype = {
     getTotalSum: function() {
-		
-		
+        function calculateTheSumOfGivenItem(price, count) {
+
+            return (price * count).toFixed(2);
+
+        }
+
+        function calculateTheWeightOfGivenItem(weight, count) {
+
+            return (weight * count).toFixed(3);
+
+        }
+
+        function calculateTotal(prices) {
+
+            var result = 0;
+
+            for (var i = 0; i < prices.length; i++) {
+
+                result += prices[i];
+
+            }
+
+            return result;
+
+        }
+
+        function onCountChange(event) {
+
+            var countCurrencies = {
+
+                'kg': 1,
+
+                'oneThird': 0.300,
+
+            };
+
+            var allPriceLI = document.querySelectorAll('.item-container-list-item:nth-of-type(3)');
+
+            var pricesArr = [];
+
+            for (var i = 0; i < allPriceLI.length; i++) {
+
+                var newPrice = Number(allPriceLI[i].textContent.split('$')[1].trim());
+
+                pricesArr.push(newPrice);
+
+            }
+
+
+
+            var totalSumP = document.getElementsByClassName('total-sum')[0];
+
+            totalSumP.textContent = '$ ' + (calculateTotal(pricesArr)).toFixed(2);
+
+
+
+            var inp = event.target;
+
+            var kgLI = inp.parentElement.parentElement.parentElement.lastElementChild.firstElementChild;
+
+            var subtotalLI = inp.parentElement.parentElement.parentElement.lastElementChild.lastElementChild;
+
+            var priceLI = inp.parentElement.parentElement.parentElement.lastElementChild.firstElementChild.nextElementSibling;
+
+            var inpVal = inp.value.trim();
+
+            var count = Number(inpVal);
+
+            if (count < 1) {
+
+                inp.value = 1;
+
+                return;
+
+            } else {
+
+                var kgNum = Number(kgLI.textContent.split(' ')[0].trim(''));
+
+                var priceNum = Number(priceLI.textContent.split('$')[1].trim(''));
+
+                if (Number.isInteger(kgNum)) {
+
+                    kgLI.textContent = calculateTheWeightOfGivenItem(countCurrencies['kg'], count) + ' kg';
+
+                } else {
+
+                    kgLI.textContent = calculateTheWeightOfGivenItem(countCurrencies['oneThird'], count) + ' kg';
+
+                }
+
+                subtotalLI.textContent = "$" + calculateTheSumOfGivenItem(priceNum, count);
+            }
+
+        }
+
     },
 
     type: 'totalSumOfOrderLines'
@@ -20,13 +113,13 @@ totalSumOfOrderLines.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-26 19:00:42</sys_created_on>
         <sys_id>e9be743b2ffcd11004702aa62799b63f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>totalSumOfOrderLines</sys_name>
         <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
         <sys_update_name>sys_script_include_e9be743b2ffcd11004702aa62799b63f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-27 07:20:58</sys_updated_on>
+        <sys_updated_on>2022-07-27 08:47:56</sys_updated_on>
     </sys_script_include>
 </record_update>

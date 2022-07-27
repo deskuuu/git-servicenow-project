@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:378929332fb0151004702aa62799b679:node:8d42eb0c9e954cb9802fe768496aff77:field:message {0}</key>
+        <language>en</language>
+        <message>Name your product:
+{0}</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-27 10:06:15</sys_created_on>
+        <sys_id>42df04882fc9151004702aa62799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:378929332fb0151004702aa62799b679:node:8d42eb0c9e954cb9802fe768496aff77:field:message {0}</sys_name>
+        <sys_package display_value="Operate" source="x_845657_operate">af5d376b2ff8d11004702aa62799b60c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Operate">af5d376b2ff8d11004702aa62799b60c</sys_scope>
+        <sys_update_name>sys_ui_message_42df04882fc9151004702aa62799b6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-27 10:06:15</sys_updated_on>
+    </sys_ui_message>
+</record_update>
